@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+<head>
+	<title>Tizeeter</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<link  href="a.css" type="text/css" rel="stylesheet">
+	<script src="validacao.js" type="text/javascript"></script> 
+</head>
+<body>
+	<div id="centro">
+		<form onsubmit="return validar()" action="cadastrar" method="post" name="form" >
+			
+			<h3>Informações da conta</h3>
+			<hr>
+			
+			<p>
+				<label id="label" for="nomeUsu">Nome do usuário:</label>
+				<input class="input" type="text" id="nomeUsu" name="nomeUsu">
+				<span class="erro" id="erroNome" ></span>
+			</p>
+						
+			<p>
+				<label for="email">Email:</label>
+				<input class="input" type="text" id="email" name="email">
+				<span class="erro" id="erroEmail"></span>
+			</p>
+				
+			<p>
+				<label for="senha">Senha:</label>
+				<input class="input" type="password" id="senha">
+				<span class="erro" id="erroSenha"></span>
+			</p>
+
+			<p>
+				<label for="confirmacaoSenha">Confirmação da senha:</label>
+				<input class="input" type="password" id="confirmacaoSenha">
+				<span class="erro" id="erroSenha1"></span>
+			</p>
+
+
+			<h3>Informações pessoais</h3>
+			<hr>
+
+			<p>
+				<label for="nomeComp">Nome completo:</label>
+				<input class="input" type="text" id="nomeComp" name="nomeComp">
+			</p>
+			
+			<p>
+				<label for="endereco">Endereço:</label>
+				<input class="input" type="text" id="endereco" name="endereco">
+			</p>
+
+			<p>
+				<label for="nascimento">Data de nascimento:</label>
+				<select name="day" id="dia">
+				</select>/
+				<select name="month" id="mes">
+				</select>/
+				<select name="year" id="ano">
+				</select>
+			</p>
+
+			<p>
+				<label for="sexo">Sexo:</label>
+				<input type="radio" id="sexM" value="Masculino" name="sex"><label for="senha">Masculino</label>
+				<input type="radio" id="sexF" value="Feminino" name="sex"><label for="senha">Feminino</label>
+			</p>
+
+			<p>
+				<input type="checkbox" name="novidades">
+				<label for="senha">Deseja receber emails com as últimas novidades</label>
+			</p>
+			<p>
+				<input id="bot" type="submit" value="Enviar">
+			</p>
+		</form>
+	</div>
+	<script src="a.js" type="text/javascript"></script>
+</body>
+</html>
